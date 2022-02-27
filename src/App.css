@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Chat {
+  height: 75vh;
+  width: 90vw;
+  border-radius: 10px;
+  border-color: #61dafb;
+  border-width: 5px;
+  background-color: #9fc35baa;
+  margin: auto;
+  border-style: hidden;
+  padding-top: 2vh;
+  /*border-color: white;*/
+}
+
+.Messages {
+  height: 87%;
+  width: 90%;
+  margin-bottom: 2vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-style: groove;
+  overflow-x: auto;
+  border-color: #9fc35b00;
+}
+
+.SenderForm {
+    display: block;
+    width: 90%;
+    margin: auto;
+    height: 5%;
+    z-index: 10;
+    padding: 0;
+}
+
+.msg{
+  width: calc(80% - 11px);
+  height: 100%;
+  cursor: text;
+  padding: 0;
+  border-width: 0;
+  border-left-width: 1px;
+  border-left-style: groove;
+  border-color: white;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  z-index: 0;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.send{
+  background-color: #6fa0f6;
+  height: 100%;
+  width: 20%;
+  cursor: pointer;
+  color: white;
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+  border-left-width: 1px;
+  border-left-style: groove;
+  border-color: white;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.messageText{
+  height: min-content;
+  width: 80%;
+  border-left-style: groove;
+  border-color: #6fa0f600;
+  border-radius: 20px;
+  background-color: #6fa0f6;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-top: 2px;
+  margin-left: 5%;
+  margin: 10px;
+  color: white;
+}
+
+.yourMsg {
+  border-color: #edf66f00;
+  background-color: #edf66f;
+  margin-left: 13%;
+  color: #000000;
+}
+
+.someoneMsg {
+  border-color: #6fa0f600;
+  background-color: #6fa0f6;
+}
+
+.acc{
+  margin: 0;
+  margin-top: 5px;
+}
+
+.text{
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*height: min-content;*/
+  /*width: 80%;*/
+  text-align: left;
+}
+
+.time{
+  text-align: end;
+  margin: 0;
+  margin-right: 10px;
+}
